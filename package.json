@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-knob",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -10,11 +10,11 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://github.com/stefanpenner/ember-cli",
+  "repository": "https://github.com/EJIqpEP/Ember-cli-knob",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Alexander Kochergin",
   "license": "MIT",
   "devDependencies": {
     "body-parser": "^1.2.0",

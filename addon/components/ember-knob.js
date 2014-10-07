@@ -5,7 +5,7 @@ export default Ember.Component.extend({
 
   initKnob: function() {
     var _this = this;
-    var _this.opts = {
+    _this.opts = {
       fgColor: _this.get('fgColor'),
       bgColor: _this.get('bgColor'),
       inputColor: _this.get('inputColor'),
@@ -15,7 +15,6 @@ export default Ember.Component.extend({
       max: Number(_this.get('max')),
       step: Number(_this.get('step')),
       width: _this.get('width'),
-      value: _this.get('value'),
       cursor: _this.get('cursor'),
       displayInput: _this.get('displayInput') === "true",
       displayPrevious: _this.get('displayPrevious') === "true",
@@ -28,11 +27,13 @@ export default Ember.Component.extend({
       rotation: _this.get('rotation'),
       change: function(v) {
         _this.set('value', v);
-      }   
-         
+      }
+
     };
 
-    _this.$().knob(opts);
+    _this.cleanOpts();
+
+    _this.$().knob(_this.opts);
 
     _this.setInitedValue();
 
@@ -45,24 +46,22 @@ export default Ember.Component.extend({
     var keys = Object.keys(_this.opts);
 
     keys.forEach(function(item) {
-      if (!_this.get(item)) {
+      if ( _this.get(item) === undefined ) {
         delete _this.opts[item];
       }
-    });    
+    });
   },
 
   setInitedValue: function () {
-    if (this.get('value')) {
+    if ( this.get('value') ) {
       this.$().val(this.get('value')).trigger('change');
     }
   },
 
   valueChanged: function() {
     this.$().val(this.get('value')).trigger('change');
-    console.log(this.get('value'));
   }.observes('value'),
 
   teardownKnob: function() {
-    console.log('teardownKnob');
   }.on('willDestroyElement'),
 });

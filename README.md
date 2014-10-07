@@ -1,14 +1,33 @@
 # Ember-cli-knob
 
-This README outlines the details of collaborating on this Ember addon.
+A dial component for Ember using http://anthonyterrien.com/knob/
 
-## Installation
+## Usage
+
+* `npm install --save ember-cli-knob`
+* `ember g ember-cli-knob`
+
+basic knob
+```hbs
+{{ember-knob}}
+```
+
+advanced knob with options
+```hbs
+{{ember-knob
+  fgColor="red"
+  bgColor="blue"
+  value="25"
+  width="150"}}
+```
+
+## Development
 
 * `git clone` this repository
 * `npm install`
 * `bower install`
 
-## Running
+## Previewing
 
 * `ember server`
 * Visit your app at http://localhost:4200.

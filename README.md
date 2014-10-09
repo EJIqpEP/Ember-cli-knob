@@ -1,24 +1,23 @@
 # Ember-cli-knob
 
+## About
 A dial component for Ember using http://anthonyterrien.com/knob/
 
-## Usage
+## Install
 
 * `npm install --save ember-cli-knob`
 * `ember g ember-cli-knob`
 
-basic knob
-```hbs
+## Usage
+
+#### In the template you can use this helper
+```handlebars
 {{ember-knob}}
 ```
 
-advanced knob with options
-```hbs
-{{ember-knob
-  fgColor="red"
-  bgColor="blue"
-  value="25"
-  width="150"}}
+#### The component can also take options
+```handlebars
+{{ember-knob fgColor="red" bgColor="blue" width="150"}}
 ```
 
 ## Development

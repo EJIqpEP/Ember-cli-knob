@@ -10,34 +10,58 @@ A dial component for Ember using http://anthonyterrien.com/knob/
 
 ## Usage
 
-#### In the template you can use this helper
+In the template you can use this helper
 ```handlebars
 {{ember-knob}}
 ```
 
-#### The component can also take options
+The component can also take options
 ```handlebars
 {{ember-knob fgColor="red" bgColor="blue" width="150"}}
 ```
 
-## Development
+### Options ###
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+The `ember-knob` helper has options to customize it.
 
-## Previewing
+#### Behaviors
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+#### `min` ####
 
-## Running Tests
+Minimum value of the dial. Default: 0.
 
-* `ember test`
-* `ember test --server`
+#### `max` ####
 
-## Building
+Maximum value of the dial. Default: 100.
 
-* `ember build`
+#### `step` ####
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+Step value. Default: 1.
+
+#### `angleOffset` ####
+
+Starting angle in degrees. Default: 0.
+
+#### `angleArc` ####
+
+Starting angle in degrees. Default: 360.
+
+#### `stopper` ####
+
+Stop at min & max on keydown/mousewheel. Default: true.
+
+#### `readOnly` ####
+
+Disable input and events. Default: false.
+
+#### `rotation` ####
+
+Direction of progression. Default: clockwise.
+
+
+
+
+
+## Want to help? ##
+
+Please help us! We are always looking to improve this plugin. You can help us by submitting properly issues and pull requests.

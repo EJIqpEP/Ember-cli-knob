@@ -24,7 +24,7 @@ The component can also take options
 
 The `ember-knob` helper has options to customize it.
 
-#### Behaviors
+##### Behaviors
 
 #### `min` ####
 
@@ -58,10 +58,53 @@ Disable input and events. Default: false.
 
 Direction of progression. Default: clockwise.
 
+##### UI
 
+#### `cursor` ####
 
+Display mode "cursor", cursor size could be changed passing a numeric value to the option. Default: gauge.
+
+#### `thickness` ####
+
+Gauge thickness. Default: false.
+
+#### `lineCap` ####
+
+Gauge stroke endings. Default: butt. Rounded: round.
+
+#### `width` ####
+
+Dial width.
+
+#### `displayInput` ####
+
+Hide or display input. Default: true. Hide input: false.
+
+#### `displayPrevious` ####
+
+Displays the previous value with transparency. Default: false.
+
+#### `fgColor` ####
+
+Foreground color.
+
+#### `inputColor` ####
+
+Input value (number) color.
+
+#### `font` ####
+
+Font family.
+
+#### `fontWeight` ####
+
+Font weight.
+
+#### `bgColor` ####
+
+Background color.
 
 
 ## Want to help? ##
 
-Please help us! We are always looking to improve this plugin. You can help us by submitting properly issues and pull requests.
+Please help us! We are always looking to improve this plugin. You can help us by submitting issues and pull requests.

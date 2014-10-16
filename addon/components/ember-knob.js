@@ -46,22 +46,23 @@ export default Ember.Component.extend({
     var keys = Object.keys(_this.opts);
 
     keys.forEach(function(item) {
-      if ( _this.get(item) === undefined ) {
+      if (_this.get(item) === undefined) {
         delete _this.opts[item];
       }
     });
   },
 
-  setInitedValue: function () {
-    if ( this.get('value') ) {
+  setInitedValue: function() {
+    if (this.get('value')) {
       this.$().val(this.get('value')).trigger('change');
     }
   },
 
   valueChanged: function() {
     this.$().val(this.get('value')).trigger('change');
+    this.sendAction('change');
   }.observes('value'),
 
-  teardownKnob: function() {
-  }.on('willDestroyElement'),
+  teardownKnob: function() {}.on('willDestroyElement')
+
 });

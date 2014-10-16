@@ -1,6 +1,5 @@
 # Ember-cli-knob
 
-## About
 A dial component for Ember using http://anthonyterrien.com/knob/
 
 ![knobs](https://cloud.githubusercontent.com/assets/1217730/4590172/64b11862-505c-11e4-8bbd-b3afff08729d.png)

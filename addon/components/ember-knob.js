@@ -15,6 +15,7 @@ export default Ember.Component.extend({
       max: Number(_this.get('max')),
       step: Number(_this.get('step')),
       width: _this.get('width'),
+      height: _this.get('height'),
       cursor: _this.get('cursor'),
       displayInput: _this.get('displayInput') === "true",
       displayPrevious: _this.get('displayPrevious') === "true",

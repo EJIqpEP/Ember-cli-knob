@@ -78,6 +78,10 @@ Gauge stroke endings. Default: butt. Rounded: round.
 
 Dial width.
 
+#### `height` ####
+
+Dial height.
+
 #### `displayInput` ####
 
 Hide or display input. Default: true. Hide input: false.
